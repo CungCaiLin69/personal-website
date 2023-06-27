@@ -1,0 +1,54 @@
+svg{
+    margin-top: 150px;
+    margin-bottom: -5px;
+}
+
+#footer{
+    height: 400px;
+    background-color:#D9DDDC;
+}
+
+.logo-in-footer{
+    margin: 80px 0 100px 100px;
+    text-transform: uppercase;
+    max-width: 100px;
+    font-size: 40px;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.pagination{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    margin-left: 800px;
+    margin-top: 150px;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.footer-link:hover{
+    color: black;
+}
+.footer-link::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 80px;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+.footer-link:hover::before{
+    transform: scaleX(1);
+}

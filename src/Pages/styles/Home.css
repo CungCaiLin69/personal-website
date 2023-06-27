@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.wave{
+  margin-top: -85px;
+  height: 330px;
+  overflow: visible;
+  width: 100%;
+}
+
+#header{
+  background-color: #d3d3d3;
+  height: 600px;
+  overflow: visible;
+}
+
+.person-header{
+  position: absolute;
+  transform: scaleX(-1);
+  right: 0px;
+  width: 450px;
+  top: 100px;
+}
+
+.person{
+  width: 2500px;
+  margin-left: -100px;
+  margin-top: -150px;
+}
+
+.personal-desc{
+  margin-right: 50px;
+}
+
+.name{
+  color: black;
+  font-size: 60px;
+}
+
+.static-txt{
+  margin-top: 5px;
+}
+
+.bottom-text{
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-left: 70px;
+}
+.wrapper .static-txt{
+  color: black;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #0072b1;
+  font-size: 60px;
+  font-weight: 600;
+  position: relative;
+  top: 0px;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  background: lightgray;
+  border-left: 2px solid #0072b1;
+  animation: typing 3s steps(12) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.arrow{
+    width: 100px;
+    margin-left: 400px;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+      margin-top: 80px;
+    }
+    to {
+      margin-top: 20px;
+    }
+}
+
+#biodata h1{
+  text-align: center;
+  font-size: 50px;
+  margin: 100px 0 50px 0;
+}
+
+.bio-desc{
+  display: flex;
+  flex-direction: row;
+}
+
+.skill-title, .service-title{
+  text-align: center;
+  font-size: 50px;
+  margin: 100px 0 50px 0;
+}
+
+.skill-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.service-body{
+  display: flex;
+  flex-direction: row;
+}
+
+.service-body p{
+  max-width: 700px;
+  margin-left: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.service-contact{
+  margin-left: 100px;
+}
+.service-contact p{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+.service-contact h1{
+  text-align: center;
+  margin-left: 50px;
+}
+.service-contact hr{
+  margin: 20px 0 20px 0;
+  width: 520px;
+}
+
+.sosmed{
+  text-align: center;
+  margin-left: 50px;
+  max-width: 200px;
+  max-height: 100px;
+  position: relative;
+  letter-spacing: 1px;
+  color: #0072b1;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  background-color: white;
+  border: 2px solid #0072b1;
+  border-radius: .75rem;
+  box-shadow: 4px -4px #0072b1;
+  transition: .1125s linear;
+  transform: translate(0, 0);
+  cursor: pointer;
+}
+.email{
+  color:#DB4437;
+  border: 2px solid #DB4437;
+  box-shadow: 4px -4px #DB4437;
+}
+.wa{
+  color:#25D366;
+  border: 2px solid #25D366;
+  box-shadow: 4px -4px #25D366;
+}
+
+.sosmed:hover{
+  box-shadow: 2px -2px #0072b1;
+  transform: translate(2px, -2px);
+}
+.email:hover{
+  box-shadow: 2px -2px #DB4437;
+  transform: translate(2px, -2px);
+}
+.wa:hover{
+  box-shadow: 2px -2px #25D366;
+  transform: translate(2px, -2px);
+}
+
+.freelance-link{
+  text-decoration: none;
+}
+
+.sosmed:active{
+  transition: 0.04s;
+  box-shadow: 0 0 #0072b1;
+  transform: translate(4px, -4px);
+}
+.email:active{
+  transition: 0.04s;
+  box-shadow: 0 0 #DB4437;
+  transform: translate(4px, -4px);
+}
+.wa:active{
+  transition: 0.04s;
+  box-shadow: 0 0 #25D366;
+  transform: translate(4px, -4px);
+}

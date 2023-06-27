@@ -1,0 +1,113 @@
+#contact-header{
+    background-color: lightgray;
+    height: 300px;
+}
+
+.wave{
+    height: 340px;
+    width: 100%;
+}
+
+#contact-header h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 120px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.first-section{
+    display: flex;
+    flex-direction: row;
+    margin-left: 6%;
+}
+
+.text-and-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.name-box, .email-box, .subject{
+    border-radius: 15px;
+    width: 400px;
+    height: 20px;
+    padding: 25px;
+    border-color: lightgrey;
+}
+
+.name-label, .email-label, .subject-label, .message-label{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+textarea {
+    margin-top: 30px;
+    width: 85%;
+    height: 400px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.subject-box{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.signin-btn{
+    border-radius: 15px;
+    width: 120px;
+    padding: 12px;
+    margin-top: 35px;
+    text-align: center;
+    border: none;
+}
+
+.btn-outline-primary{
+    width: 300px;
+    margin: 20px 0 10px 0;
+}
+
+.send-contact{
+    text-align: center;
+    margin-left: 45%;
+    margin-top: 50px;
+    max-width: 200px;
+    max-height: 100px;
+    position: relative;
+    letter-spacing: 1px;
+    color: #0072b1;
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    background-color: white;
+    border: 2px solid #0072b1;
+    border-radius: .75rem;
+    box-shadow: 4px -4px #0072b1;
+    transition: .1125s linear;
+    transform: translate(0, 0);
+    cursor: pointer;
+}
+.send-contact:hover{
+    box-shadow: 2px -2px #0072b1;
+    transform: translate(2px, -2px);
+}
+.send-contact:active{
+    transition: 0.04s;
+    box-shadow: 0 0 #0072b1;
+    transform: translate(4px, -4px);
+}
