@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import './styles/Navbar.css'
 
 export default function Navbar(){
@@ -6,10 +6,10 @@ export default function Navbar(){
         <div id="navbar">
             <nav>
                 <ul>
-                    <li><Link className="logo" to='/'>Sendy Adriansyah</Link></li>
-                    <li><Link className="nav-menu" to='/about'>About</Link></li>
-                    <li><Link className="nav-menu" to='/contact'>Contact</Link></li>
-                    <li><Link className="nav-menu" to='/projects'>Projects</Link></li>
+                    <li><NavLink className="logo" to='/'>Sendy Adriansyah</NavLink></li>
+                    <li><NavLink className={({ isActive }) => (isActive ? "nav-underline" : "nav-menu")} to='/about'>About</NavLink></li>
+                    <li><NavLink className={({ isActive }) => (isActive ? "nav-underline" : "nav-menu")} to='/contact'>Contact</NavLink></li>
+                    <li><NavLink className={({ isActive }) => (isActive ? "nav-underline" : "nav-menu")} to='/projects'>Projects</NavLink></li>
                 </ul>
             </nav>
             <Outlet />

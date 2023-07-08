@@ -53,7 +53,8 @@ export default function Home(){
                         subTitle="Front End"
                         desc="For Front End i mainly using React with JavaScript and TypeScript.
                         have an understanding of React client-side with React-Router and reusable UI component
-                        also fetching external APIs and backend with Axios
+                        also fetching external APIs and backend with Axios. With Bootstrap as my main CSS framework,
+                        i strive for beautiful UI
                         "
                     />
                     <Card
@@ -63,16 +64,17 @@ export default function Home(){
                         subTitle="Back End"
                         desc="Since having the skill of javascript, i mainly use NodeJS and express for my
                         backend development. proficiency in building RESTful API and web services also with JWT.
-                        sometimes i also made an app using GoLang"
+                        sometimes i also made an app using Laravel and Java Spring Boot, usually i used them for client
+                        requirement, expanding my skill or job requirements"
                     />
                     <Card
                         imgUrl={DB}
                         altText="database"
                         title="Database"
                         subTitle="Database"
-                        desc="What's a backend without a database? for database i mainly use MongoDB and PostgreSQL
-                        a separate SQL and NoSQL databases for variety of functionality, usually i pair NodeJS with MongoDB
-                        and PostgreSQL with GoLang"
+                        desc="What's a backend without a database? for database i mainly use MongoDB and MySQL
+                        a separate SQL and NoSQL databases for variety of functionality, usually i pair NodeJS with MongoDB, 
+                        PostgreSQL with Java Spring Boot and MySQL with Laravel"
                     />
                     <Card
                         imgUrl={Figma}
@@ -80,7 +82,7 @@ export default function Home(){
                         title="UI Design"
                         subTitle="UI Design"
                         desc="I made a web, mobile app prototype using Figma. having a skill in creating beautiful UI
-                        design and protyping like wireframing "
+                        design and protyping like wireframing"
                     />
                 </div>
             </section>

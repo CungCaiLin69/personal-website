@@ -61,4 +61,13 @@ nav ul li a{
     transform: scaleX(1);
 }
 
+.nav-underline{
+    border-bottom: 3px solid black;
+    line-height: 0.85;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 13px;
+    margin-right: 10px;
+}
+
 
